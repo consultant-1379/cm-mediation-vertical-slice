@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <!--<node>-->
+        <!--<nodeName>London</nodeName>-->
+        <!--&lt;!&ndash;<ipAddress>${netconf.server.ip}</ipAddress>&ndash;&gt;-->
+        <!--<ipAddress>10.44.107.115</ipAddress>-->
+        <!--<type>CISCO-ASR9000</type>-->
+        <!--<userName>root</userName>-->
+        <!--<passWord>root</passWord>-->
+        <!--<snmpVersion>SNMP_V2C</snmpVersion>-->
+        <!--<nodeRelease>17A</nodeRelease>-->
+        <!--</node>-->
+        <node>
+            <nodeName>CISCO-ASR9000-01</nodeName>
+            <ipAddress>${netsim}</ipAddress>
+            <type>CISCO-ASR9000</type>
+            <userName>netsim</userName>
+            <passWord>netsim</passWord>
+            <nodeRelease>17A</nodeRelease>
+            <snmpVersion>SNMP_V2C</snmpVersion>
+        </node>
+    </nodes>
+</ns2:nodesList>

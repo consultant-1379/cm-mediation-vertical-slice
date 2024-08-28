@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>ML_indoor_1</nodeName>
+            <ipAddress>127.0.0.1</ipAddress>
+            <type>MINI-LINK-Indoor</type>
+            <userName>SnmpTestUsr</userName>
+            <passWord>SnmpTestPwd</passWord>
+            <identity></identity>
+            <revision></revision>
+            <ossModelIdentity>M15A-TN-5.3FP.2-LH-1.5FP.2</ossModelIdentity>
+            <snmpSecurityName>SnmpTestUsr</snmpSecurityName>
+            <snmpSecurityLevel>AUTH_NO_PRIV</snmpSecurityLevel>
+            <snmpAuthProtocol>MD5</snmpAuthProtocol>
+            <nodeRelease>NA</nodeRelease>
+        </node>
+    </nodes>
+</ns2:nodesList>
+

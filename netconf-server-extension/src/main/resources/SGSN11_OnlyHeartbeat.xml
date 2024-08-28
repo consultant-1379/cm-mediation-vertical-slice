@@ -1,0 +1,5 @@
+<SINGLE>
+	<!-- (1) HEARTBEAT -->
+	<eventTime>2015-02-12T08:45:01Z</eventTime>
+	<heartBeat xmlns="urn:ericsson:com:sgsnmme:heartbeat:1.0" />
+</SINGLE>

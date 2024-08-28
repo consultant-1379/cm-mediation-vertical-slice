@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>LTE01dg2ERBS00001</nodeName>
+            <ossPrefix>MeContext=LTE01dg2ERBS00001</ossPrefix>
+            <ipAddress>192.168.100.36</ipAddress>
+            <type>RadioNode</type>
+            <transportProtocol>SSH</transportProtocol>
+            <port>830</port>
+            <userName>netsim</userName>
+            <passWord>netsim</passWord>
+            <nodeRelease>17A</nodeRelease>
+        </node>      
+    </nodes>
+</ns2:nodesList>

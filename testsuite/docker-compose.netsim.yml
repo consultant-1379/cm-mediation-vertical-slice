@@ -1,0 +1,17 @@
+networks: {}
+services:
+  netsim:
+    cap_add:
+    - NET_ADMIN
+    environment:
+    - DISPLAY=${DISPLAY}
+    - ENTRYPOINT_ARGS=--regExp CISCO|JUNIPER|SGSN.*16A.*CP01|LTE01|SpitFire|front|CORE-TCU02-17A-V2x5|CORE-SIU02-17A-V2x2|HLR-FE-1|HLR-FE-BSP|HLR-FE-IS|vHLR-BS-1|CORE-ST-JUNIPER-MX01x5|CORE-ST-JUNIPER-SRX-18.2R1x2|CORE-ST-JUNIPER-PTX-18.2R1x2|CORE-ST-JUNIPER-VSRX-18.2R1x2
+    image: armdocker.rnd.ericsson.se/proj_oss_releases/enm/netsim_v2:18.18
+    network_mode: service:jboss
+    volumes:
+    - /tmp/.X11-unix:/tmp/.X11-unix
+    sysctls:
+    - net.ipv6.conf.all.disable_ipv6=0
+    privileged: true
+version: '2.1'
+volumes: {}

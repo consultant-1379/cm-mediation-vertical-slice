@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	<persistence-unit name="oss-data-layer" transaction-type="RESOURCE_LOCAL">
+
+		<provider>com.versant.jpa.core.VersantPersistence</provider>
+
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.DataBucketEntity</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.GroupEntity</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.ManagedObjectEntity</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.MibInfo</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.PersistenceObjectEntity</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Acme.Pt_Command</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Acme.Pt_Unit</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Et_Country</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Et_DailyRation</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Et_Engine</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Et_Filter</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Et_FuelSystem</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Et_OilSystem</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_Ammunition</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_AmmunitionBox</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_Bullet</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_BulletTip</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_BulletTipSoft</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_Equipment</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_FullMetalJacket</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_Helicopter</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_LeadRoundNose</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_Soldier</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_Vehicle</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_WadCutter</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_ArmedForces.Pt_Weapon</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Et_CypherKey</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Et_Medal</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Axe</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Captain</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Corporal</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_DoubleAgent</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_General</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_LongBow</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Mace</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Major</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Mission</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_NatoGeneral</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Private</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Sergeant</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Spear</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Spy</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Army.Pt_Sword</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Enemy.Pt_Bullet</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Enemy.Pt_EnemyAmmunition</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Enemy.Pt_General</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_GreyArea.Pt_Hostage</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_GreyArea.Pt_Mercenary</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_GreyArea.Pt_Prisoner</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_GreyArea.Pt_Rogue</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Navy.Pt_Admiral</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Navy.Pt_Mission</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_Navy.Pt_Submarine</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_TerritorialArmy.Pt_Captain</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_TerritorialArmy.Pt_Corporal</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_TerritorialArmy.Pt_SecondedCaptain</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_TerritorialArmy.Pt_Sergeant</class>
+				<class>com.ericsson.oss.itpf.datalayer.dps.jpaentity.gen.ns_TerritorialArmy.Pt_Spy</class>
+		
+		<properties>
+			<property name="jboss.as.jpa.providerModule" value="com.versant.jpa"/>
+			<property name="versant.connectionURL" value="dps_testsuite@localhost"/>
+			<property name="versant.username" value="versant"/>
+			<property name="versant.password" value="shversant"/>
+			<property name="versant.schemaEvolve" value="true"/>
+			<property name="versant.defaultEntityNames" value="fullyQualifiedClassName"/>
+			<property name="versant.connectionPoolSize" value="50"/>
+			<property name="versant.indexesDefinitionFile" value="META-INF/indexes.xml"/>
+			<property name="versant.inheritIndexes" value="true"/>
+			<property name="versant.indexEvolve" value="true"/>
+			<!-- COMMENTED DUE TO BUG: http://jira-oss.lmera.ericsson.se/browse/TORF-7750 -->
+			<!-- COMMENTED DUE TO BUG:TORF-7750 property name="versant.unresolvableReferenceStrategy" value="REPAIR"/-->
+			
+		</properties>
+
+	</persistence-unit>
+</persistence>

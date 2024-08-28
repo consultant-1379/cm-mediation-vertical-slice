@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>CORE17TCU02001</nodeName>
+            <ipAddress>${netsim}</ipAddress>
+            <ossPrefix>MeContext=CORE17TCU02001</ossPrefix>
+            <type>TCU02</type>
+            <userName>netsim</userName>
+            <passWord>netsim</passWord>
+            <nodeRelease>17A</nodeRelease>
+            <ossModelIdentity>17A</ossModelIdentity>
+            <snmpAgentPort>22</snmpAgentPort>
+            <transportProtocol>SSH</transportProtocol>
+            <homedirectory>/home/smrs/smrsroot/cm_models/</homedirectory>
+            <relativepath>/</relativepath>
+        </node>
+    </nodes>
+</ns2:nodesList>

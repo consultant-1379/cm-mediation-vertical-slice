@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>SGSN-16A-CP01-V101</nodeName>
+            <ipAddress>${netsim}</ipAddress>
+            <type>SGSN-MME</type>
+            <userName>netsim</userName>
+            <passWord>netsim</passWord>
+	    <nodeRelease>16A</nodeRelease>
+            <transportProtocol>SSH</transportProtocol>
+            <port>22</port>
+        </node>      
+        <!--<node>
+            <nodeName>SGSN-16A-CP01-V102</nodeName>
+            <ipAddress>192.168.100.39</ipAddress>
+            <type>SGSN-MME</type>
+            <userName>netsim</userName>
+            <passWord>netsim</passWord>
+            <nodeRelease>16A</nodeRelease>
+            <transportProtocol>SSH</transportProtocol>
+            <port>22</port>
+        </node>-->
+    </nodes>
+</ns2:nodesList>

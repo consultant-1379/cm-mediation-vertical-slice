@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>SGSN11</nodeName>
+            <ipAddress>${netconf.server.ip}</ipAddress>
+            <type>SGSN-MME</type>
+            <transportProtocol>SSH</transportProtocol>
+            <port>2122</port>
+            <userName>NotifRegression</userName>
+            <passWord>NotifRegression</passWord>
+            <nodeRelease>14B</nodeRelease>
+        </node>
+    </nodes>
+</ns2:nodesList>

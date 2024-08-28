@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>CORE86FrontHaul6020001</nodeName>
+            <ipAddress>${netsim}</ipAddress>
+            <type>FRONTHAUL-6020</type>
+            <platformType>FRONTHAUL-6000</platformType>
+            <userName>admin</userName>
+            <passWord>admin</passWord>
+            <ossPrefix>MeContext=CORE86FrontHaul6020001</ossPrefix>
+            <transportProtocol>SSH</transportProtocol>
+            <port>830</port>
+            <snmpAgentPort>161</snmpAgentPort>
+            <snmpTrapPort>162</snmpTrapPort>
+            <nodeRelease>18.Q2</nodeRelease>
+        </node>
+    </nodes>
+</ns2:nodesList>

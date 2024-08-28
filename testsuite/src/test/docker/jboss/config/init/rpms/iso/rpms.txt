@@ -1,0 +1,133 @@
+#################################
+# install specific dependencies #
+#################################
+ERICftphandlercode_CXP9030846
+ERICftpjcaconnector_CXP9031543
+ERICftpjcaconnectorapi_CXP9031542
+ERICneconn_CXP9030958
+
+#################################
+# install AddNode               #
+#################################
+ERICcmmediationcommonhandlers_CXP9032461
+ERICnedmediationhandlers_CXP9032962
+# ECAROVA FM NO  ERICsshcredentialsmanagerhandlercode_CXP9032068
+
+#################################
+# install common CM dependencies#
+#################################
+ERICmediationengineapi_CXP9031505
+
+###############################
+# install SNMP CM dependencies#
+###############################
+EXTRwebnmssnmpapimodule_CXP9031603
+ERICsnmpconnector_CXP9031526
+ERICsnmpconnectorapi_CXP9031535
+ERICsnmpenterpriseconnector_CXP9031525
+ERICsnmpenterpriseconnectorapi_CXP9031534
+ERICenterpriseheartbeatconnectorrar_CXP9035229
+ERICenterpriseheartbeatconnectorapi_CXP9031706
+ERICsnmpheartbeatprovider_CXP9031707
+ERICsnmpcmhandlers_CXP9032995
+ERICminilinkindoorcmhandlers_CXP9032998
+
+#####################################################
+# install specific dependencies from COMECIMPOLICY  #
+#####################################################
+#ERICcomecimcmrouterpolicy_CXP9032279
+
+##############################################
+# install specific dependencies from MSCMCE  #
+##############################################
+ERICsgsnnetconfxaresourceprovider_CXP9032582
+ERICcomecimnetconfxaresourceprovider_CXP9032581
+ERICsshhandler_CXP9030865
+ERICcomecimcmheartbeatsuphandlercode_CXP9031588
+ERICecimnotifheartbeathandlercode_CXP9031704
+ERICcomecimcmdeltasynchandlercode_CXP9031761
+ERICcomecimcmpreparesubshanldercode_CXP9032034
+ERICcomecimcmsubscriptionhandlercode_CXP9031599
+ERICcomecimdeletesubshandlercode_CXP9031685
+ERICcomecimmdbnotificationapi_CXP9031814
+ERICcomecimmdbnotification_CXP9031813
+ERICcomecimnotifsupervisionhandlercode_CXP9031679
+ERICnotificationcachemodule_CXP9032623
+ERICnotificationcacheservice_CXP9032215
+ERICcbacmsyncnodehandlers_CXP9031503
+ERICcomecimcmfiltergethandlercode_CXP9032145
+ERICnetconfsessionimpl_CXP9032411
+ERICsshcommandhandlercode_CXP9032059
+ERICsgsnmmecommandhandlercode_CXP9032062
+ERICcomecimnetworkmodelretrievertool_CXP9032069
+ERICnetworkmodelretrieverapi_CXP9032695
+ERICnetworkmodelretrieverplugins_CXP9032875 
+ERICdpsruntimeapi_CXP9030469
+ERICcmeventsservice_CXP9032627
+
+#####################################################
+# install jgroupsconfig for transport xml           #
+#####################################################
+ERICjgroupsconfig_CXP9033554
+
+###############################
+# install SNMP FM dependencies#
+###############################
+
+##########################################
+# install CISCO & JUNIPER dependencies   #
+##########################################
+
+ERICciscorouterclirouterhandler_CXP9033227
+
+#################################
+# install common PM dependencies#
+#################################
+
+#################################
+# install CPP dependencies      #
+#################################
+
+#################################
+# install COM/ECIM dependencies #
+#################################
+
+#################################
+# install ER6000 dependencies   #
+#################################
+
+ERICyangtransformer_CXP9032339
+ERICer6000syncnodehandler_CXP9032574
+
+ERICiposcmheartbtsuphandler_CXP9032444
+ERICiposcmsubhandler_CXP9032445
+ERICiposcmnotiflistener_CXP9032443
+ERICiposcmheartbeatlistener_CXP9032472
+ERICiposcmcopyconfighandler_CXP9032605
+
+ERICer6000networkmodelretrievertool_CXP9033087
+
+#################################
+# install EBM dependencies      #
+#################################
+
+#################################
+# install STN dependencies      #
+#################################
+ERICstncmhandlers_CXP9035012
+ERICsshjcaconnector_CXP9031462
+ERICsshresourceadapter_CXP9035595
+ERICstnxaresourceprovider_CXP9035596
+ERICenmsgmsap_CXP9032313
+ERICsnmpcmlistener_CXP9035617
+
+##########################################
+# install FRONTHAUL-6080 dependencies    #
+##########################################
+
+
+##########################################
+# install FRONTHAUL-6020 dependencies    #
+##########################################
+ERICfronthaul6000cmhandlers_CXP9036083
+

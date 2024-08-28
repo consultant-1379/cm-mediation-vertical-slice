@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:dpsObjectInfoList xmlns:ns2="com.ericsson.oss.services.test.utils">
+  <dpsobjects>
+   <dpsobject operations="create,verify,delete"> 
+     <fdn>MeContext=CORE86FrontHaul6020001</fdn>    
+     <namespace>OSS_TOP</namespace>
+     <version>3.0.0</version>
+     <type>MeContext</type>
+     <name>CORE86FrontHaul6020001</name>  
+     <managedObject>true</managedObject>
+     <isMediated>true</isMediated>
+     <attributes>
+        <attribute key="MeContextId">CORE86FrontHaul6020001</attribute>
+        <attribute key="neType">FRONTHAUL-6020</attribute>
+     </attributes>  
+    </dpsobject>
+   </dpsobjects>
+ </ns2:dpsObjectInfoList>

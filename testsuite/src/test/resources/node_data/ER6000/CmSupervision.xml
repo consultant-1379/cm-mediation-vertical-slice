@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>SPFRER60001</nodeName>
+            <ipAddress>${netsim}</ipAddress>
+            <type>Router6672</type>
+            <transportProtocol>SSH</transportProtocol>
+            <port>22</port>
+            <userName>er6672</userName>
+            <passWord>er6672</passWord>
+            <nodeRelease>17A</nodeRelease>
+            <ossModelIdentity>R17A-GA</ossModelIdentity>
+        </node>
+    </nodes>
+</ns2:nodesList>

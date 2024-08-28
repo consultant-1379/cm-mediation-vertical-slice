@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>HLR-FE-IS-1-9-01</nodeName>
+            <ipAddress>192.168.100.96</ipAddress>
+            <type>HLR-FE-IS</type>
+            <transportProtocol>SSH</transportProtocol>
+            <port>830</port>
+            <userName>hlrfe</userName>
+            <passWord>hlrfe</passWord>
+            <nodeRelease>18</nodeRelease>
+            <timezone>IST</timezone>
+            <hlrfeConnectivityInformation>
+                  <apnodeAIpAddress>192.168.101.102</apnodeAIpAddress>
+                  <apnodeBIpAddress>192.168.101.103</apnodeBIpAddress>
+                  <isManagerIpAddress>192.168.102.214</isManagerIpAddress>
+                  <httpsPort>8181</httpsPort>
+            </hlrfeConnectivityInformation>
+        </node>
+    </nodes>
+</ns2:nodesList>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ericsson.oss.mediation.cm.testsuite</groupId>
+        <artifactId>cm-mediation-vertical-slice</artifactId>
+        <version>1.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>testsuite</artifactId>
+    <name>[${project.artifactId}]</name>
+
+    <properties>
+        <testsuite.name>CM MEDIATION</testsuite.name>
+        <arquillian.cucumber.options>--tags ~@ignore --tags ~@Netsim</arquillian.cucumber.options>
+        <version.ERICsnmpagentsimulator_CXP0000000>RELEASE</version.ERICsnmpagentsimulator_CXP0000000> 
+        
+    </properties>
+
+    <!-- NOTE: in order to override the test steps/api version use the a maven property like 'version.<rpm>' 
+       e.g.  
+          <version.ERICsharedtesttool_CXP0000000>1.0.192-SNAPSHOT</version.ERICsharedtesttool_CXP0000000>
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>com.ericsson.oss.services.test</groupId>
+            <artifactId>shared-cucumber-steps</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.services.test</groupId>
+            <artifactId>cm-mediation-cucumber-steps</artifactId>
+        </dependency>
+
+<!--         <dependency>
+            <groupId>com.ericsson.oss.services.test</groupId>
+            <artifactId>snmp-agent-simulator</artifactId>
+        </dependency> -->
+        <dependency>
+            <groupId>com.ericsson.oss.services.test</groupId>
+            <artifactId>snmp-agent-cucumber-steps</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.mediation.adapter.snmp.sim</groupId>
+	        <artifactId>snmp-agent-simulator-jar</artifactId>
+	        <version>${version.ERICsnmpagentsimulator_CXP0000000}</version>
+        </dependency>
+
+<!--         <dependency>
+            <groupId>org.adventnet</groupId>
+            <artifactId>AdventNetLogging</artifactId>
+            <version>${version.adventen.AdventNetSnmp}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.adventnet</groupId>
+            <artifactId>AdventNetSnmp</artifactId>
+            <version>${version.adventen.AdventNetSnmp}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.adventnet</groupId>
+            <artifactId>AdventNetSnmpV3USM</artifactId>
+            <version>${version.adventen.AdventNetSnmp}</version>
+        </dependency> -->
+
+        <dependency>
+            <groupId>com.ericsson.oss.services.lcm</groupId>
+            <artifactId>license-control-monitoring-service-api</artifactId>
+            <version>${version.ERIClicensecontrolmonitoringservice_CXP9031452}</version>
+            <type>jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ericsson.licensemanagement</groupId>
+            <artifactId>LicenseManagementService-API</artifactId>
+            <version>${version.LicenseManagementService-API}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.nms.security</groupId>
+            <artifactId>identitymgmtservices-api</artifactId>
+            <version>${version.identitymgmtservices-api}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.services.test</groupId>
+            <artifactId>smrs-cucumber-steps</artifactId>
+            <version>${version.ERICsharedtesttool_CXP0000000}</version>
+        </dependency>
+
+    </dependencies>
+
+   <profiles>
+     <profile>
+            <id>IT</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+   
+                    <plugin>
+                        <groupId>com.ericsson.oss.services.test</groupId>
+                        <artifactId>netconf-server-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>start-netconf-server</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>start-netconf-server</goal>
+                                </goals>
+                                <configuration>
+                                    <port>${netconf.server.port}</port>
+                                    <configuration>${project.build.testOutputDirectory}${file.separator}netconf-server-conf.xml</configuration>
+                                    <logFile>${project.build.directory}${file.separator}netconf-server.log</logFile>
+                                    <logLevel>DEBUG</logLevel>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>stop-netconf-server</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>stop-netconf-server</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <dependencies>
+                        <dependency>
+                            <groupId>com.ericsson.oss.mediation.cm.testsuite</groupId>
+                            <artifactId>netconf-server-extension</artifactId>
+                            <version>${project.parent.version}</version>
+                        </dependency>
+                        </dependencies>
+                    </plugin>
+                    <!--plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <systemProperties>
+                                <jboss.home>${jboss.home}</jboss.home>
+                            </systemProperties>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>default-test</id>
+                                <configuration>
+                                    <skip>true</skip> 
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <configuration>
+                            <threadCount>1</threadCount>
+                            <systemPropertyVariables>
+                                <jboss.home>${jboss.home}</jboss.home>
+                                <arquillian.debug>${arquillian.debug}</arquillian.debug>
+                                <netconf.server.port>${netconf.server.port}</netconf.server.port>
+                                <sftp_port>${sftp_port}</sftp_port>
+                                <med_service_protocol_info>${med_service_protocol_info}</med_service_protocol_info>
+                                <med_service_capabilities>${med_service_capabilities}</med_service_capabilities>
+                                <host.ip>${host.ip}</host.ip>
+                                <container.ip>${container.ip}</container.ip>
+                                <netconf.server.ip>${netconf.server.ip}</netconf.server.ip>
+                                <corba.node.ip>${corba.node.ip}</corba.node.ip>
+                                <sftp.server.hostname>${sftp.server.hostname}</sftp.server.hostname>
+                                <sftp.server.username>${sftp.server.username}</sftp.server.username>
+                                <sftp.server.password>${sftp.server.password}</sftp.server.password>
+                                <sftp.server.port>${sftp.server.port}</sftp.server.port>
+                                <cucumber.report.dir>${cucumber.report.dir}</cucumber.report.dir>
+                                <container-address>${container-address}</container-address>
+                                <arquillian.cucumber.options>${arquillian.cucumber.options}</arquillian.cucumber.options>
+                                <arquillian.launch>${arquillian.container}</arquillian.launch>
+                            </systemPropertyVariables>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>integration-test</id>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin-->
+                </plugins>
+            </build>
+        </profile>
+   </profiles>
+</project>

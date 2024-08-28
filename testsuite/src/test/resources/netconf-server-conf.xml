@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SshConfiguration allowUsersFormListOnly="true">
+	<subsystems>
+	    <subsystem>netconf</subsystem>
+	    <subsystem>netconf-ecim</subsystem>
+	</subsystems>
+	<users>
+		<entry>
+			<key>pico</key>
+			<value>pico</value>
+		</entry>
+		<entry>
+			<key>radio</key>
+			<value>radio</value>
+		</entry>
+		<entry>
+			<key>jdusgen02</key>
+			<value>jdusgen02</value>
+		</entry>
+		<entry>
+			<key>jsgsn05</key>
+			<value>jsgsn05</value>
+		</entry>
+		<entry>
+			<key>gsgsn05</key>
+			<value>gsgsn05</value>
+		</entry>
+		<entry>
+			<key>HeartbeatWithNotification</key>
+			<value>mdbTest</value>
+		</entry>
+		<entry>
+			<key>NotifRegression</key>
+			<value>NotifRegression</value>
+		</entry>
+		<entry>
+			<key>NotifBlacklist</key>
+			<value>NotifBlacklist</value>
+		</entry>
+		<entry>
+			<key>CreatesubscriptionError</key>
+			<value>CreatesubscriptionError</value>
+		</entry>
+	</users>
+	<rules>
+		<rule>
+			<when>
+				<user-condition username="HeartbeatWithNotification" />
+			</when>
+			<then>
+				<class>
+					<TestHeartbeatWithNotificationAndSync
+						nodeName="SGSN05" />
+				</class>
+			</then>
+		</rule>
+		<rule>
+			<when>
+				<user-condition username="NotifRegression" />
+			</when>
+			<then>
+				<class>
+					<TestRegressionOnNotifications 
+						nodeName="SGSN11" 
+						notificationFileName="SGSN11_Notifications.xml" />
+				</class>
+			</then>
+		</rule>
+		<rule>
+			<when>
+				<user-condition username="NotifBlacklist" />
+			</when>
+			<then>
+				<class>
+					<TestRegressionOnNotifications 
+						nodeName="SGSN11" 
+						notificationFileName="SGSN11_OnlyHeartbeat.xml" />
+				</class>
+			</then>
+		</rule>
+		<rule>
+			<when>
+				<user-condition username="CreatesubscriptionError" />
+			</when>
+			<then>
+				<class>
+					<TestCreateSubscriptionError 
+						nodeName="SGSN11" 
+						notificationFileName="SGSN11_OnlyHeartbeat.xml" />
+				</class>
+			</then>
+		</rule>
+		<rule>
+			<when>
+				<user-condition username="pico" />
+			</when>
+			<then>
+				<class>
+					<TestPicoSubscribeSyncAndNotifications
+						nodeName="MSRBS-V1" />
+				</class>
+			</then>
+		</rule>
+		<rule>
+			<when>
+				<user-condition username="radio" />
+			</when>
+			<then>
+				<class>
+					<TestRadioSubscribeSyncAndNotifications
+						nodeName="MSRBS-V202" />
+				</class>
+			</then>
+		</rule>
+		<rule>
+			<when>
+				<user-condition username="jdusgen02" />
+			</when>
+			<then>
+				<class>
+					<TestReplayLogAgedTimeEndNotifCom
+						nodeName="MSRBS-V202" />
+				</class>
+			</then>
+		</rule>
+		<rule>
+			<when>
+				<user-condition username="jsgsn05" />
+			</when>
+			<then>
+				<class>
+					<TestReplayLogAgedTimeEndNotif
+						nodeName="SGSN05" />
+				</class>
+			</then>
+		</rule>
+		<rule>
+			<when>
+				<user-condition username="gsgsn05" />
+			</when>
+			<then>
+				<class>
+					<TestReplayLogAgedTime
+						nodeName="SGSN05" />
+				</class>
+			</then>
+		</rule>
+
+
+	</rules>
+</SshConfiguration>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>vHLR-BS-1-9-01</nodeName>
+            <ossPrefix>MeContext=vHLR-BS-1-9-01</ossPrefix>
+            <ipAddress>192.168.100.99</ipAddress>
+            <type>vHLR-FE</type>
+            <transportProtocol>SSH</transportProtocol>
+            <port>830</port>
+            <userName>netsim</userName>
+            <passWord>netsim</passWord>
+            <nodeRelease>18</nodeRelease>
+            <timezone>IST</timezone>
+            <hlrfeConnectivityInformation>
+                  <apnodeAIpAddress>192.168.101.102</apnodeAIpAddress>
+                  <apnodeBIpAddress>192.168.101.103</apnodeBIpAddress>
+            </hlrfeConnectivityInformation>
+        </node>
+    </nodes>
+</ns2:nodesList>

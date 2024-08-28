@@ -1,0 +1,10 @@
+ERIClicenseservicestub_CXP0000000
+com/ericsson/oss/services/test:ERICsharedserviceshelper_CXP0000000
+
+#TODO: remove tp resolver when it will be delivered and available on docker images
+com/ericsson/oss/mediation/resolver:ERICtpattributeresolver_CXP9034039
+
+
+##########################################
+# install FRONTHAUL-6020 dependencies    #
+ERICfronthaul6000cmhandlers_CXP9036083

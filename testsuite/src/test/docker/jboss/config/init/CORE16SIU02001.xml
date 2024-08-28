@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config version="5.38" xmlns="http://www.ericsson.com/stn/5.38">
+    <STN instanceId="0">
+        <STNId>0</STNId>
+        <CPU_Load>45</CPU_Load>
+        <failedPMUploads>0</failedPMUploads>
+        <operationalState>disabled</operationalState>
+        <depIP_Interface></depIP_Interface>
+        <wakeUpEventInterval>1</wakeUpEventInterval>
+        <SW_PrimaryProductNumber>123AAAA</SW_PrimaryProductNumber>
+        <SW_PrimaryProductRevision>11A</SW_PrimaryProductRevision>
+        <SW_BackupProductNumber>123BBB</SW_BackupProductNumber>
+        <SW_BackupProductRevision>11B</SW_BackupProductRevision>
+        <CPU_Load>45</CPU_Load>
+        <alarmSupervisionActive>true</alarmSupervisionActive>
+        <DSCP_OperationAndMaintenance>0</DSCP_OperationAndMaintenance>
+        <DSCP_OM_FileTransfer>0</DSCP_OM_FileTransfer>
+        <STN_PGW_KeepalivePeriod>1</STN_PGW_KeepalivePeriod>
+        <STN_PGW_L2TP_MaxTransmissions>5</STN_PGW_L2TP_MaxTransmissions>
+        <STN_PGW_L2TP_RetransmissionCap>4</STN_PGW_L2TP_RetransmissionCap>
+        <STN_PGW_L2TP_InitialRetransmissionPeriod>1</STN_PGW_L2TP_InitialRetransmissionPeriod>
+        <STN_Name>Kista</STN_Name>
+        <restartReason>powerOn</restartReason>
+        <systemClockTimeServer>0.0.0.0</systemClockTimeServer>
+        <STN_systemClockUDP_Port>123</STN_systemClockUDP_Port>
+        <contactWithFileServer>true</contactWithFileServer>
+        <systemClockUDP_Port_General_PTP>320</systemClockUDP_Port_General_PTP>
+        <systemClockUDP_Port_Event_PTP>319</systemClockUDP_Port_Event_PTP>
+        <systemClockTimeServerType>NTP</systemClockTimeServerType>
+        <depLocalRoutingPolicy></depLocalRoutingPolicy>
+        <userLabel></userLabel>
+        <wakeUpDestination>0.0.0.0</wakeUpDestination>
+        <systemClockPTPDomainNumber>-1</systemClockPTPDomainNumber>
+        <lastConfigChange></lastConfigChange>
+        <arpPcp>6</arpPcp>
+        <promptPrefix></promptPrefix>
+        <arpMeanRefreshInterval>30</arpMeanRefreshInterval>
+        <arpRefreshNoOfAttempts>3</arpRefreshNoOfAttempts>
+        <arpRefreshAttemptsInterval>1</arpRefreshAttemptsInterval>
+        <robustRollbackTimer>180</robustRollbackTimer>
+        <nodeAuthenticationSecret></nodeAuthenticationSecret>
+        <Equipment instanceId="0">
+            <EquipmentId>0</EquipmentId>
+            <serialNumber>2345667</serialNumber>
+            <productRevision>090</productRevision>
+            <productNumber>987655</productNumber>
+            <manufacturingDate>20061224</manufacturingDate>
+            <productName>SIU02</productName>
+        </Equipment>
+        <IPv6RoutingTable instanceId="0">
+            <IPv6RoutingTableId>0</IPv6RoutingTableId>
+            <IPv6RouteSys instanceId="0">
+                <IPv6RouteSysId>0</IPv6RouteSysId>
+                <active>true</active>
+                <destIpSubnet></destIpSubnet>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <metric>0</metric>
+            </IPv6RouteSys>
+        </IPv6RoutingTable>
+        <MeasurementDefinition instanceId="0">
+            <MeasurementDefinitionId>0</MeasurementDefinitionId>
+            <neIndex>0</neIndex>
+            <filePrefix>STN</filePrefix>
+            <granularityPeriod>15</granularityPeriod>
+            <reportPeriod>15</reportPeriod>
+            <measurementActive>false</measurementActive>
+        </MeasurementDefinition>
+        <RoutingTable instanceId="9">
+            <RoutingTableId>9</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <RoutingTable instanceId="8">
+            <RoutingTableId>8</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <RoutingTable instanceId="7">
+            <RoutingTableId>7</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <RoutingTable instanceId="6">
+            <RoutingTableId>6</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <RoutingTable instanceId="5">
+            <RoutingTableId>5</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <RoutingTable instanceId="4">
+            <RoutingTableId>4</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <RoutingTable instanceId="3">
+            <RoutingTableId>3</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <RoutingTable instanceId="2">
+            <RoutingTableId>2</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <RoutingTable instanceId="1">
+            <RoutingTableId>1</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <RoutingTable instanceId="0">
+            <RoutingTableId>0</RoutingTableId>
+            <IpRouteSys instanceId="0">
+                <IpRouteSysId>0</IpRouteSysId>
+                <Active>true</Active>
+                <destIpSubnet></destIpSubnet>
+                <nextHopIpAddress></nextHopIpAddress>
+                <forwardingInterface></forwardingInterface>
+                <routeType>Static</routeType>
+                <admDistance>0</admDistance>
+            </IpRouteSys>
+        </RoutingTable>
+        <SecurityManager instanceId="0">
+            <SecurityManagerId>0</SecurityManagerId>
+            <SFTPClient instanceId="0">
+                <SFTPClientId>0</SFTPClientId>
+                <supportedCiphers></supportedCiphers>
+                <supportedKeyExchanges></supportedKeyExchanges>
+                <supportedMacs></supportedMacs>
+                <defaultCiphers></defaultCiphers>
+                <defaultKeyExchanges></defaultKeyExchanges>
+                <defaultMacs></defaultMacs>
+                <selectedCiphers></selectedCiphers>
+                <selectedKeyExchanges></selectedKeyExchanges>
+                <selectedMacs></selectedMacs>
+            </SFTPClient>
+            <SSH instanceId="0">
+                <SSHId>0</SSHId>
+                <supportedCiphers></supportedCiphers>
+                <supportedKeyExchanges></supportedKeyExchanges>
+                <supportedMacs></supportedMacs>
+                <defaultCiphers></defaultCiphers>
+                <defaultKeyExchanges></defaultKeyExchanges>
+                <defaultMacs></defaultMacs>
+                <selectedCiphers></selectedCiphers>
+                <selectedKeyExchanges></selectedKeyExchanges>
+                <selectedMacs></selectedMacs>
+            </SSH>
+            <TLS instanceId="0">
+                <TLSId>0</TLSId>
+                <cipherFilter>DEFAULT</cipherFilter>
+                <EnabledCipher instanceId="0">
+                    <EnabledCipherId>0</EnabledCipherId>
+                    <authentication></authentication>
+                    <encryption></encryption>
+                    <export></export>
+                    <keyExchange></keyExchange>
+                    <mac></mac>
+                    <name></name>
+                    <protocolVersion></protocolVersion>
+                </EnabledCipher>
+                <SupportedCipher instanceId="0">
+                    <SupportedCipherId>0</SupportedCipherId>
+                    <authentication></authentication>
+                    <encryption></encryption>
+                    <export></export>
+                    <keyExchange></keyExchange>
+                    <mac></mac>
+                    <name></name>
+                    <protocolVersion></protocolVersion>
+                </SupportedCipher>
+            </TLS>
+        </SecurityManager>
+        <Synchronization instanceId="0">
+            <SynchronizationId>0</SynchronizationId>
+            <TS_NoTS_Reselections>0</TS_NoTS_Reselections>
+            <TS_STN_SynchStatus>notSynchronized</TS_STN_SynchStatus>
+            <TS_UsedTimeServer></TS_UsedTimeServer>
+            <calibrationExpireDate>20100101</calibrationExpireDate>
+            <synchType>none</synchType>
+            <DSCP_Synchronization>0</DSCP_Synchronization>
+            <depIP_Interface></depIP_Interface>
+            <usedSynchSource></usedSynchSource>
+            <calibrationStatus>CAL_PROGRESS_0_FFC</calibrationStatus>
+            <DelayNoCalibrationAlarm>0</DelayNoCalibrationAlarm>
+            <clockMode>legacy</clockMode>
+        </Synchronization>
+        <TempSensor instanceId="0">
+            <TempSensorId>0</TempSensorId>
+            <currentTemp>-274</currentTemp>
+            <highTemp>-274</highTemp>
+            <highTempDate></highTempDate>
+            <lowTemp>-274</lowTemp>
+            <lowTempDate></lowTempDate>
+            <highDestructiveMeasure>0</highDestructiveMeasure>
+            <lowDestructiveMeasure>0</lowDestructiveMeasure>
+            <inHighExtendedTemp>0</inHighExtendedTemp>
+            <inLowExtendedTemp>0</inLowExtendedTemp>
+        </TempSensor>
+        <VRF instanceId="9">
+            <VRFId>9</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+        <VRF instanceId="8">
+            <VRFId>8</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+        <VRF instanceId="7">
+            <VRFId>7</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+        <VRF instanceId="6">
+            <VRFId>6</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+        <VRF instanceId="5">
+            <VRFId>5</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+        <VRF instanceId="4">
+            <VRFId>4</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+        <VRF instanceId="3">
+            <VRFId>3</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+        <VRF instanceId="2">
+            <VRFId>2</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+        <VRF instanceId="1">
+            <VRFId>1</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+        <VRF instanceId="0">
+            <VRFId>0</VRFId>
+            <vrfDescription></vrfDescription>
+            <inUse>true</inUse>
+        </VRF>
+    </STN>
+</config>

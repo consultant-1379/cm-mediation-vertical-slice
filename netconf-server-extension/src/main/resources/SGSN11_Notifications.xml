@@ -1,0 +1,885 @@
+<SINGLE>
+	<!-- (1) HEARTBEAT -->
+	<eventTime>2015-02-12T08:45:01Z</eventTime>
+	<heartBeat xmlns="urn:ericsson:com:sgsnmme:heartbeat:1.0" />
+</SINGLE>
+<SINGLE>
+	<!-- (2) CREATE SgsnMme=1,Config=2 -->
+	<eventTime>2015-02-12T08:45:11Z</eventTime>
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,Config=2">
+		<attr name="configName">
+			<v/>
+		</attr>
+		<attr name="lastChanged">
+			<v/>
+		</attr>
+		<attr name="changedBy">
+			<v>Nobody</v>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<MULTIPLE>
+	<!-- (3) CREATE SgsnMme=1,Config=2 -->
+	<eventTime>2015-02-12T08:45:21Z</eventTime>
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,Config=2">
+		<attr name="configName">
+			<v/>
+		</attr>
+		<attr name="lastChanged">
+			<v/>
+		</attr>
+		<attr name="changedBy">
+			<v>Test2</v>
+		</attr>
+	</objectCreated>
+	<!-- CREATE SgsnMme=1,PIU=3,AtmPort=1,AtmVc=1 -->
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,PIU=3,AtmPort=1,AtmVc=1">
+		<attr name="atmVirtualPathIdentifier">
+			<v>1</v>
+		</attr>
+		<attr name="atmVirtualChannelIdentifier">
+			<v>4</v>
+		</attr>
+		<attr name="serviceCategory">
+			<v>VBR</v>
+		</attr>
+		<attr name="peakCellRate">
+			<v>155000</v>
+		</attr>
+		<attr name="sustainableCellRate">
+			<v>605</v>
+		</attr>
+		<attr name="minimumCellRate">
+			<v>65</v>
+		</attr>
+		<attr name="maximumBurstSize">
+			<v>192</v>
+		</attr>
+		<attr name="vcInterfaceType">
+			<v>ip</v>
+		</attr>
+		<attr name="atmVcId">
+			<v>1</v>
+		</attr>
+		<attr name="aAtmVcLb">
+			<v/>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+		<attr name="aSs7SaalLink">
+			<v/>
+		</attr>
+	</objectCreated>
+	<!-- CREATE SgsnMme=1,PIU=2,AtmPort=1 -->
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,AtmPort=1">
+		<attr name="atmPortId">
+			<v>1</v>
+		</attr>
+		<attr name="physicalLayer">
+			<v>sdh</v>
+		</attr>
+		<attr name="clockReference">
+			<v>internal</v>
+		</attr>
+		<attr name="vpiVciRange">
+			<v/>
+		</attr>
+		<attr name="atmRemoteLoopbackMode">
+			<v>off</v>
+		</attr>
+		<attr name="atmPortObjId">
+			<v>1</v>
+		</attr>
+	</objectCreated>
+	<!-- CREATE SgsnMme=1,PIU=3,AtmPort=1 -->
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,PIU=3,AtmPort=1">
+		<attr name="atmPortId">
+			<v>1</v>
+		</attr>
+		<attr name="physicalLayer">
+			<v>sdh</v>
+		</attr>
+		<attr name="clockReference">
+			<v>internal</v>
+		</attr>
+		<attr name="vpiVciRange">
+			<v/>
+		</attr>
+		<attr name="atmRemoteLoopbackMode">
+			<v>off</v>
+		</attr>
+		<attr name="atmPortObjId">
+			<v>1</v>
+		</attr>
+	</objectCreated>
+	<!-- CREATE SgsnMme=1,PIU=3,E1T1Trunk=1 -->
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,PIU=3,E1T1Trunk=1">
+		<attr name="e1T1TrunkId">
+			<v>1</v>
+		</attr>
+		<attr name="channelizedE1">
+			<v>true</v>
+		</attr>
+		<attr name="cRC4Alg">
+			<v>true</v>
+		</attr>
+		<attr name="trunkCodingType">
+			<v>1</v>
+		</attr>
+		<attr name="pCMInterfaceType">
+			<v>e1</v>
+		</attr>
+		<attr name="clockingMode">
+			<v>auto</v>
+		</attr>
+		<attr name="e1T1CableType">
+			<v>2</v>
+		</attr>
+		<attr name="t1FramingStandard">
+			<v>0</v>
+		</attr>
+		<attr name="e1T1RemoteLoopbackMode">
+			<v>off</v>
+		</attr>
+		<attr name="e1T1TrunkObjId">
+			<v>1</v>
+		</attr>
+	</objectCreated>
+
+	<!-- CREATE SgsnMme=1,PIU=3 -->
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,PIU=3">
+		<attr name="equipmentPosition">
+			<v>3</v>
+		</attr>
+		<attr name="piuType">
+			<v/>
+		</attr>
+		<attr name="adminState">
+			<v/>
+		</attr>
+		<attr name="operState">
+			<v/>
+		</attr>
+		<attr name="aRouterInstance">
+			<v/>
+		</attr>
+		<attr name="aSwComponent">
+			<v/>
+		</attr>
+		<attr name="aStaticIpv6route">
+			<v/>
+		</attr>
+	</objectCreated>
+	<!-- CREATE SgsnMme=1,PIU=2 -->
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2">
+		<attr name="equipmentPosition">
+			<v>2</v>
+		</attr>
+		<attr name="piuType">
+			<v/>
+		</attr>
+		<attr name="adminState">
+			<v/>
+		</attr>
+		<attr name="operState">
+			<v/>
+		</attr>
+		<attr name="aRouterInstance">
+			<v/>
+		</attr>
+		<attr name="aSwComponent">
+			<v/>
+		</attr>
+		<attr name="aStaticIpv6route">
+			<v/>
+		</attr>
+	</objectCreated>
+	<!-- CREATE SgsnMme=1,PIU=5 -->
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,PIU=5">
+		<attr name="equipmentPosition">
+			<v>5</v>
+		</attr>
+	</objectCreated>
+	<!-- CREATE SgsnMme=1,PIU=5,AtmPort=1 -->
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,PIU=5,AtmPort=1">
+		<attr name="atmPortId">
+			<v>1</v>
+		</attr>
+		<attr name="physicalLayer">
+			<v>sdh</v>
+		</attr>
+		<attr name="atmPortObjId">
+			<v>1</v>
+		</attr>
+	</objectCreated>
+	<!-- AVC SgsnMme=1,SLs=1 -->
+	<AVC dn="ManagedElement=SGSN11,SgsnMme=1,SLs=1">
+		<attr name="t3x01short">
+			<v>33</v>
+		</attr>
+	</AVC>
+</MULTIPLE>
+<MULTIPLE>
+        <!-- (4) -->
+	<AVC dn="ManagedElement=SGSN11,SgsnMme=1,PIU=3,AtmPort=1,AtmVc=1">
+		<attr name="serviceCategory">
+			<v>UBR</v>
+		</attr>
+	</AVC>
+	<objectCreated dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1">
+		<attr name="ethernetPort">
+			<v>1</v>
+		</attr>
+		<attr name="lineSpeed">
+			<v>1000</v>
+		</attr>
+		<attr name="duplex">
+			<v>full</v>
+		</attr>
+		<attr name="actualLineSpeed">
+			<v/>
+		</attr>
+		<attr name="actualDuplex">
+			<v/>
+		</attr>
+		<attr name="autoNegotiation">
+			<v>true</v>
+		</attr>
+		<attr name="flowControl">
+			<v>false</v>
+		</attr>
+		<attr name="ethernetMacAddress">
+			<v/>
+		</attr>
+		<attr name="portName">
+			<v/>
+		</attr>
+		<attr name="activePatchPanelPortName">
+			<v>initialValue</v>
+		</attr>
+		<attr name="ethPortId">
+			<v>1</v>
+		</attr>
+	</objectCreated>
+</MULTIPLE>
+<SINGLE>
+        <!-- (5) -->
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=1">
+		<attr name="ethernetVlanId">
+			<v>1</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>1</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=2">
+		<attr name="ethernetVlanId">
+			<v>2</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>2</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=3">
+		<attr name="ethernetVlanId">
+			<v>3</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>3</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=4">
+		<attr name="ethernetVlanId">
+			<v>4</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>4</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=5">
+		<attr name="ethernetVlanId">
+			<v>5</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>5</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=6">
+		<attr name="ethernetVlanId">
+			<v>6</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>6</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=7">
+		<attr name="ethernetVlanId">
+			<v>7</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>7</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=8">
+		<attr name="ethernetVlanId">
+			<v>8</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>8</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=9">
+		<attr name="ethernetVlanId">
+			<v>9</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>9</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=10">
+		<attr name="ethernetVlanId">
+			<v>10</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>10</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=11">
+		<attr name="ethernetVlanId">
+			<v>11</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>11</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=12">
+		<attr name="ethernetVlanId">
+			<v>12</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>12</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=13">
+		<attr name="ethernetVlanId">
+			<v>13</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>13</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=14">
+		<attr name="ethernetVlanId">
+			<v>14</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>14</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=15">
+		<attr name="ethernetVlanId">
+			<v>15</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>15</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=16">
+		<attr name="ethernetVlanId">
+			<v>16</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>16</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=17">
+		<attr name="ethernetVlanId">
+			<v>17</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>17</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=18">
+		<attr name="ethernetVlanId">
+			<v>18</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>18</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=19">
+		<attr name="ethernetVlanId">
+			<v>19</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>19</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectCreated
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=20">
+		<attr name="ethernetVlanId">
+			<v>20</v>
+		</attr>
+		<attr name="ethVlanId">
+			<v>20</v>
+		</attr>
+		<attr name="aIpInterface">
+			<v/>
+		</attr>
+	</objectCreated>
+</SINGLE>
+<SINGLE>
+	<objectDeleted
+		dn="ManagedElement=SGSN11,SgsnMme=1,PIU=2,EthPort=1,EthVlan=10"/>
+</SINGLE>
+<MULTIPLE>
+    <eventTime>2015-09-25T14:01:36Z</eventTime>
+        <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmJob=USERDEF-torf-72703.Cont.Y.STATS">
+            <attr name="pmJobId">
+                <v>USERDEF-torf-72703.Cont.Y.STATS</v>
+            </attr>
+            <attr name="requestedJobState">
+                <v>ACTIVE</v>
+            </attr>
+            <attr name="reportingPeriod">
+                <v>FIFTEEN_MIN</v>
+            </attr>
+            <attr name="jobType">
+                <v>MEASUREMENTJOB</v>
+            </attr>
+            <attr name="jobPriority">
+                <v>MEDIUM</v>
+            </attr>
+            <attr name="granularityPeriod">
+                <v>FIFTEEN_MIN</v>
+            </attr>
+            <attr name="currentJobState">
+                <v>ACTIVE</v>
+            </attr>
+            <attr name="jobControl">
+                <v>FULL</v>
+            </attr>
+            <attr name="compressionType">
+                <v>GZIP</v>
+            </attr>
+            <attr name="jobGroup">
+                <v/>
+            </attr>
+        </objectCreated>
+        <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmJob=USERDEF-torf-72703.Cont.Y.STATS,MeasurementReader=SGSN-MME_ATMAdaptionLayer5_atmal5CRCErrors_Id">
+            <attr name="measurementReaderId">
+                <v>SGSN-MME_ATMAdaptionLayer5_atmal5CRCErrors_Id</v>
+            </attr>
+            <attr name="measurementReaderNameValue">
+                <v>
+                    <elem name="currentValue">
+                        <v/>
+                    </elem>
+                    <elem name="lastUpdated">
+                        <v/>
+                    </elem>
+                    <elem name="moClassInstance">
+                        <v/>
+                    </elem>
+                    <elem name="suspectFlag">
+                        <v>false</v>
+                    </elem>
+                </v>
+            </attr>
+            <attr name="measurementSpecification">
+                <v>
+                    <elem name="measurementTypeRef">
+                        <v>ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmGroup=SGSN-MME_ATMAdaptionLayer5,MeasurementType=atmal5CRCErrors</v>
+                    </elem>
+                    <elem name="groupRef"/>
+                </v>
+            </attr>
+        </objectCreated>
+        <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmJob=USERDEF-torf-72703.Cont.Y.STATS,MeasurementReader=SGSN-MME_ATMAdaptionLayer5_atmal5IfInPkts_Id">
+            <attr name="measurementReaderId">
+                <v>SGSN-MME_ATMAdaptionLayer5_atmal5IfInPkts_Id</v>
+            </attr>
+            <attr name="measurementReaderNameValue">
+                <v>
+                    <elem name="currentValue">
+                        <v/>
+                    </elem>
+                    <elem name="lastUpdated">
+                        <v/>
+                    </elem>
+                    <elem name="moClassInstance">
+                        <v/>
+                    </elem>
+                    <elem name="suspectFlag">
+                        <v>false</v>
+                    </elem>
+                </v>
+            </attr>
+            <attr name="measurementSpecification">
+                <v>
+                    <elem name="measurementTypeRef">
+                        <v>ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmGroup=SGSN-MME_ATMAdaptionLayer5,MeasurementType=atmal5IfInPkts</v>
+                    </elem>
+                    <elem name="groupRef"/>
+                </v>
+            </attr>
+        </objectCreated>
+        <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmJob=USERDEF-torf-72703.Cont.Y.STATS,MeasurementReader=SGSN-MME_ATMAdaptionLayer5_atmal5IfInOctets_Id">
+            <attr name="measurementReaderId">
+                <v>SGSN-MME_ATMAdaptionLayer5_atmal5IfInOctets_Id</v>
+            </attr>
+            <attr name="measurementReaderNameValue">
+                <v>
+                    <elem name="currentValue">
+                        <v/>
+                    </elem>
+                    <elem name="lastUpdated">
+                        <v/>
+                    </elem>
+                    <elem name="moClassInstance">
+                        <v/>
+                    </elem>
+                    <elem name="suspectFlag">
+                        <v>false</v>
+                    </elem>
+                </v>
+            </attr>
+            <attr name="measurementSpecification">
+                <v>
+                    <elem name="measurementTypeRef">
+                        <v>ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmGroup=SGSN-MME_ATMAdaptionLayer5,MeasurementType=atmal5IfInOctets</v>
+                    </elem>
+                    <elem name="groupRef"/>
+                </v>
+            </attr>
+        </objectCreated>
+        <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmJob=USERDEF-torf-72703.Cont.Y.STATS,MeasurementReader=SGSN-MME_ATMAdaptionLayer5_atmal5IfInDiscards_Id">
+            <attr name="measurementReaderId">
+                <v>SGSN-MME_ATMAdaptionLayer5_atmal5IfInDiscards_Id</v>
+            </attr>
+            <attr name="measurementReaderNameValue">
+                <v>
+                    <elem name="currentValue">
+                        <v/>
+                    </elem>
+                    <elem name="lastUpdated">
+                        <v/>
+                    </elem>
+                    <elem name="moClassInstance">
+                        <v/>
+                    </elem>
+                    <elem name="suspectFlag">
+                        <v>false</v>
+                    </elem>
+                </v>
+            </attr>
+            <attr name="measurementSpecification">
+                <v>
+                    <elem name="measurementTypeRef">
+                        <v>ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmGroup=SGSN-MME_ATMAdaptionLayer5,MeasurementType=atmal5IfInDiscards</v>
+                    </elem>
+                    <elem name="groupRef"/>
+                </v>
+            </attr>
+        </objectCreated>
+        <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmJob=USERDEF-torf-72703.Cont.Y.STATS,MeasurementReader=SGSN-MME_ATMAdaptionLayer5_atmal5IfInErrors_Id">
+            <attr name="measurementReaderId">
+                <v>SGSN-MME_ATMAdaptionLayer5_atmal5IfInErrors_Id</v>
+            </attr>
+            <attr name="measurementReaderNameValue">
+                <v>
+                    <elem name="currentValue">
+                        <v/>
+                    </elem>
+                    <elem name="lastUpdated">
+                        <v/>
+                    </elem>
+                    <elem name="moClassInstance">
+                        <v/>
+                    </elem>
+                    <elem name="suspectFlag">
+                        <v>false</v>
+                    </elem>
+                </v>
+            </attr>
+            <attr name="measurementSpecification">
+                <v>
+                    <elem name="measurementTypeRef">
+                        <v>ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmGroup=SGSN-MME_ATMAdaptionLayer5,MeasurementType=atmal5IfInErrors</v>
+                    </elem>
+                    <elem name="groupRef"/>
+                </v>
+            </attr>
+        </objectCreated>
+</MULTIPLE>
+<MULTIPLE>
+    <eventTime>2015-12-17T13:47:04Z</eventTime>
+    <events xmlns="urn:ericsson:com:netconf:notification:1.1">
+        <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmJob=USERDEF-Guinness_Sub_3.Cont.Y.STATS,MeasurementReader=SGSN-MME_BSSGP_bssgpAttSuspendProc_Id">
+            <attr name="pmJobId">
+                <v>USERDEF-Guinness_Sub_3.Cont.Y.STATS</v>
+            </attr>
+            <attr name="measurementReaderNameValue"/>
+            <attr name="measurementSpecification">
+                <v><elem name="groupRef"/>
+                    <elem name="measurementTypeRef">
+                        <v>ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmGroup=SGSN-MME_BSSGP,MeasurementType=bssgpAttSuspendProc</v>
+                    </elem>
+                </v>
+            </attr>
+        </objectCreated>
+        <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmJob=USERDEF-Guinness_Sub_3.Cont.Y.STATS,MeasurementReader=SGSN-MME_BSSGP_bssgpAttResumeProc_Id">
+            <attr name="pmJobId">
+                <v>USERDEF-Guinness_Sub_3.Cont.Y.STATS</v>
+            </attr>
+            <attr name="measurementReaderNameValue"/>
+            <attr name="measurementSpecification">
+                <v><elem name="groupRef"/>
+                    <elem name="measurementTypeRef">
+                        <v>ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmGroup=SGSN-MME_BSSGP,MeasurementType=bssgpAttResumeProc</v>
+                    </elem>
+                </v>
+            </attr>
+        </objectCreated>
+        <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,Pm=1,PmJob=USERDEF-Guinness_Sub_3.Cont.Y.STATS">
+            <attr name="requestedJobState">
+                <v>ACTIVE</v>
+            </attr>
+            <attr name="reportingPeriod">
+                <v>FIFTEEN_MIN</v>
+            </attr>
+            <attr name="jobType">
+                <v>MEASUREMENTJOB</v>
+            </attr>
+            <attr name="jobPriority">
+                <v>MEDIUM</v>
+            </attr>
+            <attr name="granularityPeriod">
+                <v>FIFTEEN_MIN</v>
+            </attr>
+            <attr name="currentJobState">
+                <v>ACTIVE</v>
+            </attr>
+            <attr name="jobControl">
+                <v>FULL</v>
+            </attr>
+            <attr name="compressionType">
+                <v>GZIP</v>
+            </attr>
+            <attr name="jobGroup">
+                <v/>
+            </attr>
+        </objectCreated>
+    </events>
+</MULTIPLE>
+<SINGLE>
+    <AVC dn="ManagedElement=SGSN11,SgsnMme=1,Config=active">
+        <attr name="lastChanged">
+            <v>2015-12-17T12:16:18+01:00</v>
+        </attr>
+        <attr name="changedBy">
+            <v>root</v>
+        </attr>
+    </AVC>
+</SINGLE>
+<MULTIPLE>
+<eventTime>2016-01-21T16:55:35Z</eventTime>
+<events xmlns="urn:ericsson:com:netconf:notification:1.1">
+    <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,BrM=1,BrmBackupManager=system">
+        <attr name="brmBackupManagerId">
+            <v>system</v>
+        </attr>
+    </objectCreated>
+    <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,BrM=1,BrmBackupManager=system,BrmBackupScheduler=1">
+        <attr name="brmBackupSchedulerId">
+            <v>1</v>
+        </attr>
+    </objectCreated>
+    <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,BrM=1,BrmBackupManager=system,BrmBackupScheduler=1,BrmCalendarBasedPeriodicEvent=4">
+        <attr name="brmBackupManagerId">
+            <v>system</v>
+        </attr>
+        <attr name="brmBackupSchedulerId">
+            <v>1</v>
+        </attr>
+        <attr name="month">
+            <v>0</v>
+        </attr>
+        <attr name="dayOfWeek">
+            <v>ALL</v>
+        </attr>
+        <attr name="dayOfMonth">
+            <v>0</v>
+        </attr>
+        <attr name="time">
+            <v>20:00:00</v>
+        </attr>
+        <attr name="dayOfWeekOccurrence">
+            <v>ALL</v>
+        </attr>
+        <attr name="startTime">
+            <v>2015-11-01T02:01:02</v>
+        </attr>
+        <attr name="stopTime">
+            <v>2099-12-31T23:59:59</v>
+        </attr>
+    </objectCreated>
+    <objectCreated dn="ManagedElement=SGSN11,SystemFunctions=1,BrM=1,BrmBackupManager=system,BrmBackupScheduler=1,BrmCalendarBasedPeriodicEvent=3">
+        <attr name="brmBackupManagerId">
+            <v>system</v>
+        </attr>
+        <attr name="brmBackupSchedulerId">
+            <v>1</v>
+        </attr>
+        <attr name="month">
+            <v>0</v>
+        </attr>
+        <attr name="dayOfWeek">
+            <v>ALL</v>
+        </attr>
+        <attr name="dayOfMonth">
+            <v>0</v>
+        </attr>
+        <attr name="time">
+            <v>20:00:00</v>
+        </attr>
+        <attr name="dayOfWeekOccurrence">
+            <v>ALL</v>
+        </attr>
+        <attr name="startTime">
+            <v>2015-11-01T02:01:02</v>
+        </attr>
+        <attr name="stopTime">
+            <v>2099-12-31T23:59:59</v>
+        </attr>
+    </objectCreated>
+</events>
+</MULTIPLE>
+<!--
+<SINGLE>
+<eventTime>2016-02-12T15:01:05Z</eventTime>
+<events dnPrefix="MeContext=SGSN11" xmlns="urn:ericsson:com:netconf:notification:1.0">
+    <AVC dn="ManagedElement=SGSN11,SgsnMme=1,PIU=3,AtmPort=1,AtmVc=1">
+        <attr name="serviceCategory">
+            <v>GFR</v>
+        </attr>
+    </AVC>
+</events>
+</SINGLE>
+-->

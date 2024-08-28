@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>MSRBS-V1</nodeName>
+            <ipAddress>${netconf.server.ip}</ipAddress>
+	    <platform></platform>
+	    <type>MSRBS_V1</type>
+            <transportProtocol>SSH</transportProtocol>
+            <port>2122</port>
+            <userName>pico</userName>
+            <passWord>pico</passWord>
+            <ossModelIdentity>16A-R9F</ossModelIdentity>
+            <identity>CXP9026658/2</identity>
+            <revision>R1BK</revision>
+        </node> 
+    </nodes>
+</ns2:nodesList>

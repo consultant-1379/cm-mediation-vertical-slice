@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--<ns2:nodesList xmlns:ns2="com.ericsson.oss.services.test.servicehelper.data">-->
+<ns2:nodesList xmlns:ns2="com.ericsson.oss.mediation.pm.testsuite.data">
+    <nodes>
+        <node>
+            <nodeName>London</nodeName>
+            <ipAddress>10.44.107.115</ipAddress>
+            <type>CISCO-ASR9000</type>
+            <userName>root</userName>
+            <passWord>root</passWord>
+            <nodeRelease>17A</nodeRelease>
+        </node>
+    </nodes>
+</ns2:nodesList>
